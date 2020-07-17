@@ -39,7 +39,7 @@
 		<?php if (logged_in()) : ?>
 			<a class="downlad-btn" href="/dashboard">Admin Page</a>
 		<?php else : ?>
-			<a class="downlad-btn" href="/login">Login Page</a>
+			<a class="downlad-btn" href="/profile">Login Page</a>
 		<?php endif; ?>
 	</div><!-- container -->
 </header>
