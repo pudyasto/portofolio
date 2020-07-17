@@ -2,7 +2,7 @@
 
 ## What is Portofolio?
 
-Portofolio is a PHP Weh Application, create from Codeigniter 4
+Portofolio is a PHP Web Application, create from Codeigniter 4
 
 ## What is CodeIgniter?
 
