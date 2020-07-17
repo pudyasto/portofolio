@@ -2,12 +2,13 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
-
-class Dashboard extends Controller
+class Dashboard extends BaseController
 {
     public function index()
     {
-        return view('dashboard/index');
+        $data = array(
+            'title' => 'Dashboard',
+        );
+        return view('dashboard/index', $data);
     }
 }

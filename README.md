@@ -1,4 +1,8 @@
-# CodeIgniter 4 Application Starter
+# Portofolio
+
+## What is Portofolio?
+
+Portofolio is a PHP Weh Application, create from Codeigniter 4
 
 ## What is CodeIgniter?
 
@@ -16,17 +20,19 @@ The user guide corresponding to this version of the framework can be found
 
 ## Installation & updates
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
-
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+Clone this repository then update the composer `composer update`.
 
 ## Setup
 
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
+
+Run this command from terminal :
+Migrate database : `php spark migrate`
+Insert dummy data : `php spark db:seed DataSeeder`
+
+Or, You can upload database file to mysql server
+from `\db-dummy\db_portofolio.sql`
 
 ## Important Change with index.php
 
@@ -39,15 +45,6 @@ framework are exposed.
 
 **Please** read the user guide for a better explanation of how CI4 works!
 The user guide updating and deployment is a bit awkward at the moment, but we are working on it!
-
-## Repository Management
-
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script. 
-Problems with it can be raised on our forum, or as issues in the main repository.
 
 ## Server Requirements
 

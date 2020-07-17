@@ -29838,3 +29838,13 @@ input.datetimepicker[data-color='yellow'] + .bootstrap-datetimepicker-widget.dro
 {
     background: transparent;
 }
+
+
+#debug-bar .ci-label img {
+    width: 16px !important;
+}
+
+
+tfoot {
+    display: table-header-group;
+}

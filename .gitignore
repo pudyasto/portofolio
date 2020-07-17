@@ -59,10 +59,13 @@ writable/session/*
 
 writable/uploads/*
 !writable/uploads/index.html
+!writable/uploads/demo.jpg
 
 writable/debugbar/*
 
 php_errors.log
+
+
 
 #-------------------------
 # User Guide Temp Files
@@ -125,3 +128,15 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 /.phpunit.*.cache
+
+#-------------------------
+# Public Files
+#-------------------------
+public/uploads/products/*
+!public/uploads/products/index.html
+!public/uploads/products/demo*
+
+public/uploads/*
+!public/uploads/products
+!public/uploads/index.html
+!public/uploads/demo.jpg

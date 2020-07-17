@@ -17,51 +17,45 @@
                   <!-- Nav items -->
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <a class="nav-link active" href="/dashboard">
+                          <a class="nav-link" href="/home">
+                              <i class="ni ni-app text-primary"></i>
+                              <span class="nav-link-text">Home</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/dashboard">
                               <i class="ni ni-tv-2 text-primary"></i>
                               <span class="nav-link-text">Dashboard</span>
                           </a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-planet text-orange"></i>
-                              <span class="nav-link-text">Icons</span>
+                          <a class="nav-link" href="/product">
+                              <i class="ni ni-atom text-primary"></i>
+                              <span class="nav-link-text">Product</span>
                           </a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-pin-3 text-primary"></i>
-                              <span class="nav-link-text">Google</span>
+                          <a class="nav-link" href="/work">
+                              <i class="ni ni-briefcase-24 text-primary"></i>
+                              <span class="nav-link-text">Work Experience</span>
                           </a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-single-02 text-yellow"></i>
+                          <a class="nav-link" href="/education">
+                              <i class="ni ni-paper-diploma text-primary"></i>
+                              <span class="nav-link-text">Education</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/skill">
+                              <i class="ni ni-sound-wave text-primary"></i>
+                              <span class="nav-link-text">Skill</span>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/profile">
+                              <i class="ni ni-circle-08 text-primary"></i>
                               <span class="nav-link-text">Profile</span>
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-bullet-list-67 text-default"></i>
-                              <span class="nav-link-text">Tables</span>
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-key-25 text-info"></i>
-                              <span class="nav-link-text">Login</span>
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-circle-08 text-pink"></i>
-                              <span class="nav-link-text">Register</span>
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">
-                              <i class="ni ni-send text-dark"></i>
-                              <span class="nav-link-text">Upgrade</span>
                           </a>
                       </li>
                   </ul>

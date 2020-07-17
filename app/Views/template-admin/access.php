@@ -47,6 +47,9 @@
         <?= $this->renderSection('content') ?>
     </div>
     <!-- Footer -->
+    <script>
+        var public_url = '<?= site_url(); ?>';
+    </script>
     <?= $this->include('template-admin/access-footer') ?>
     <!-- Argon Scripts -->
     <?= $this->include('template-admin/js') ?>

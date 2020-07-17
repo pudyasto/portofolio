@@ -260,3 +260,30 @@ header .downlad-btn:hover{ -webkit-transform: translateY(-4px); transform: trans
 
 .copyright{ text-align: center; padding: 30px 0; background: #28023D; }
 
+
+#debug-bar .ci-label img {
+	margin: 0px 3px 0px 0; 
+	width: 16px !important;
+  }
+
+  #custom-trigger.visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+  #custom-trigger {
+    position: fixed;
+    bottom: 2.5%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    padding: 1rem 0;
+    background-color: hsla(0,0%,100%,.75);
+    z-index: 1011;
+    text-align: center;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}

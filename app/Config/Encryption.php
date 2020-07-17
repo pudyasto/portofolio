@@ -1,4 +1,5 @@
 <?php
+
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
@@ -32,5 +33,4 @@ class Encryption extends BaseConfig
 	  | The default driver, if you don't specify one, is 'OpenSSL'.
 	 */
 	public $driver = 'OpenSSL';
-
 }

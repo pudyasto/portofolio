@@ -38,18 +38,7 @@
                 <div class="header-body">
                     <div class="row align-items-center py-4">
                         <div class="col-lg-6 col-7">
-                            <h6 class="h2 text-white d-inline-block mb-0">Icons</h6>
-                            <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-                                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="#">Components</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Icons</li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="col-lg-6 col-5 text-right">
-                            <a href="#" class="btn btn-sm btn-neutral">New</a>
-                            <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                            <h6 class="h2 text-white d-inline-block mb-0">Portofolio</h6>
                         </div>
                     </div>
                 </div>
@@ -61,9 +50,30 @@
             <!-- Footer -->
             <?= $this->include('template-admin/footer') ?>
         </div>
-    </div>
 
+        <!-- Modal General start -->
+        <div class="modal fade" id="form-modal" role="dialog" data-backdrop="static" aria-labelledby="form-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content animated fadeIn">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="form-modal-title" style="font-size: 18px;">Form Modal</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="form-modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal General end -->
+    </div>
+    <script>
+        var public_url = '<?= site_url(); ?>';
+    </script>
     <?= $this->include('template-admin/js') ?>
+    <?= $this->renderSection('ext-js') ?>
 </body>
 
 </html>
