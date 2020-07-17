@@ -28,8 +28,8 @@ Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
 
 Run this command from terminal :
-Migrate database : `php spark migrate`
-Insert dummy data : `php spark db:seed DataSeeder`
+- Migrate database : `php spark migrate`
+- Insert dummy data : `php spark db:seed DataSeeder`
 
 Or, You can upload database file to mysql server
 from `\db-dummy\db_portofolio.sql`
