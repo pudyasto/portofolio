@@ -1,19 +1,19 @@
 <!-- Argon Scripts -->
 <!-- Core -->
-<script src="/assets/argon/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/assets/argon/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/assets/argon/vendor/js-cookie/js.cookie.js"></script>
-<script src="/assets/argon/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-<script src="/assets/argon/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+<script src="/assets/argon/plugins/jquery/dist/jquery.min.js"></script>
+<script src="/assets/argon/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/argon/plugins/js-cookie/js.cookie.js"></script>
+<script src="/assets/argon/plugins/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/assets/argon/plugins/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
 <!-- Optional JS -->
-<script src="/assets/argon/vendor/clipboard/dist/clipboard.min.js"></script>
+<script src="/assets/argon/plugins/clipboard/dist/clipboard.min.js"></script>
 <script src="/assets/argon/js/components/momentjs/moment-with-locales.min.js"></script>
 <script src="/assets/argon/js/components/numeraljs/numeral.min.js"></script>
 <script src="/assets/argon/js/components/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <script src="/assets/argon/js/components/jquery-form/jquery.form.js"></script>
 <!-- Optional JS -->
-<script src="assets/argon/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="assets/argon/vendor/chart.js/dist/Chart.extension.js"></script>
+<script src="assets/argon/plugins/chart.js/dist/Chart.min.js"></script>
+<script src="assets/argon/plugins/chart.js/dist/Chart.extension.js"></script>
 <!-- Argon JS -->
 <script src="/assets/argon/js/argon.js?v=1.2.0"></script>
 <!-- Custom JS -->

@@ -140,3 +140,5 @@ public/uploads/*
 !public/uploads/products
 !public/uploads/index.html
 !public/uploads/demo.jpg
+
+!public/assets/argon/vendor/*
