@@ -1,6 +1,6 @@
--- MySQL dump 10.13  Distrib 8.0.20, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.21, for Linux (x86_64)
 --
--- Host: 172.17.0.1    Database: db_portofolio
+-- Host: 172.17.0.1    Database: db_demo
 -- ------------------------------------------------------
 -- Server version	5.7.30
 
@@ -143,7 +143,7 @@ CREATE TABLE `auth_logins` (
 
 LOCK TABLES `auth_logins` WRITE;
 /*!40000 ALTER TABLE `auth_logins` DISABLE KEYS */;
-INSERT INTO `auth_logins` VALUES (1,'127.0.0.1','admin@demo.com',1,'2020-07-16 18:15:34',1);
+INSERT INTO `auth_logins` VALUES (1,'127.0.0.1','admin@demo.com',1,'2020-07-17 13:18:22',1);
 /*!40000 ALTER TABLE `auth_logins` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,6 +275,7 @@ CREATE TABLE `ci_sessions` (
 
 LOCK TABLES `ci_sessions` WRITE;
 /*!40000 ALTER TABLE `ci_sessions` DISABLE KEYS */;
+INSERT INTO `ci_sessions` VALUES ('3bh3qjlu6te34raq2j9l9vapcuokke5j','127.0.0.1',1594968781,'__ci_last_regenerate|i:1594968781;_ci_previous_url|s:22:\"http://localhost:8080/\";logged_in|s:1:\"1\";'),('48c0iq9fq54604r4kjo2gt9onfjoonm3','127.0.0.1',1594968794,'__ci_last_regenerate|i:1594968781;_ci_previous_url|s:31:\"http://localhost:8080/dashboard\";logged_in|s:1:\"1\";'),('bn3vas03ha8siq07cinrnh1n1naeebha','127.0.0.1',1594966702,'__ci_last_regenerate|i:1594966702;_ci_previous_url|s:27:\"http://localhost:8080/login\";redirect_url|s:29:\"http://localhost:8080/profile\";');
 /*!40000 ALTER TABLE `ci_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -296,7 +297,7 @@ CREATE TABLE `education` (
   `updated_at` datetime NOT NULL,
   `deleted_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,6 +306,7 @@ CREATE TABLE `education` (
 
 LOCK TABLES `education` WRITE;
 /*!40000 ALTER TABLE `education` DISABLE KEYS */;
+INSERT INTO `education` VALUES (1,'Stekom University','Bachelor of Computer Science','2008-06-01','0000-00-00','Create web application using php - codeiginter 4 and database mysql','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL);
 /*!40000 ALTER TABLE `education` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -324,7 +326,7 @@ CREATE TABLE `migrations` (
   `time` int(11) NOT NULL,
   `batch` int(11) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,7 +335,7 @@ CREATE TABLE `migrations` (
 
 LOCK TABLES `migrations` WRITE;
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
-INSERT INTO `migrations` VALUES (112,'2017-11-20-223112','App\\Database\\Migrations\\CreateAuthTables','default','App',1594898125,1),(113,'2020-07-14-091419','App\\Database\\Migrations\\Sessions','default','App',1594898125,1),(114,'2020-07-14-102111','App\\Database\\Migrations\\Profile','default','App',1594898125,1),(115,'2020-07-14-102120','App\\Database\\Migrations\\Product','default','App',1594898125,1),(116,'2020-07-14-102146','App\\Database\\Migrations\\Work','default','App',1594898125,1),(117,'2020-07-14-102151','App\\Database\\Migrations\\Education','default','App',1594898125,1),(118,'2020-07-14-102406','App\\Database\\Migrations\\Skill','default','App',1594898125,1);
+INSERT INTO `migrations` VALUES (1,'2017-11-20-223112','App\\Database\\Migrations\\CreateAuthTables','default','App',1594966677,1),(2,'2020-07-14-091419','App\\Database\\Migrations\\Sessions','default','App',1594966677,1),(3,'2020-07-14-102111','App\\Database\\Migrations\\Profile','default','App',1594966677,1),(4,'2020-07-14-102120','App\\Database\\Migrations\\Product','default','App',1594966677,1),(5,'2020-07-14-102146','App\\Database\\Migrations\\Work','default','App',1594966677,1),(6,'2020-07-14-102151','App\\Database\\Migrations\\Education','default','App',1594966677,1),(7,'2020-07-14-102406','App\\Database\\Migrations\\Skill','default','App',1594966677,1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -354,7 +356,7 @@ CREATE TABLE `product` (
   `updated_at` datetime NOT NULL,
   `deleted_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -363,6 +365,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'Open Source','Portofolio','This is my first web application using codeigniter 4','demo-1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(2,'Commercial','Point of Sales','Point of Sales Web Apps build with codeigniter 4','demo-2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(3,'Team Work','ERM Web Apps','ERM Web Apps build with codeigniter 4','demo-3.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -398,7 +401,7 @@ CREATE TABLE `profile` (
 
 LOCK TABLES `profile` WRITE;
 /*!40000 ALTER TABLE `profile` DISABLE KEYS */;
-INSERT INTO `profile` VALUES (1,'Rehan Syafiq','2000-05-20','Semarang','Stop Learning Start Dying','I like to receive and deal with challenging tasks. I am a very enthusiastic student and I think this is a strong point of mine. My friends say that I am a very funny and an interesting girl with a good sense of humor.','Srikaton Selatan No. 31','Kota Semarang','6281226250110','rehan.sr@gmail.com','https://www.linkedin.com/in/rehan.sr/','https://www.instagram.com/rehan.sr/','https://www.facebook.com/rehan.sr/','https://www.twitter.com/@rehan.sr/');
+INSERT INTO `profile` VALUES (1,'Mas Joko','1988-10-12','Semarang','Stop Learning Start Dying','I like to receive and deal with challenging tasks. I am a very enthusiastic student and I think this is a strong point of mine. My friends say that I am a very funny and an interesting girl with a good sense of humor.','Wologito Barat','Kota Semarang','6281-226-250-150','mr.joko@gmail.com','https://www.linkedin.com/in/mas.joko/','https://www.instagram.com/mas.joko/','https://www.facebook.com/mas.joko/','https://www.twitter.com/@mas.joko/');
 /*!40000 ALTER TABLE `profile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -418,7 +421,7 @@ CREATE TABLE `skill` (
   `updated_at` datetime NOT NULL,
   `deleted_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -427,6 +430,7 @@ CREATE TABLE `skill` (
 
 LOCK TABLES `skill` WRITE;
 /*!40000 ALTER TABLE `skill` DISABLE KEYS */;
+INSERT INTO `skill` VALUES (1,'PHP Codeigniter','Codeigniter is very easy to use and implemented quickly. Lightweight and secure, everyone can easily understand it.',85,'0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(2,'Jquery','jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.',76,'0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(3,'MySQL','MySQL is an open-source relational database management system (RDBMS).Its name is a combination of \"My\", the name of co-founder Michael Widenius\'s daughter,and \"SQL\", the abbreviation for Structured Query Language.',80,'0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(4,'HTML','HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.',80,'0000-00-00 00:00:00','0000-00-00 00:00:00',NULL);
 /*!40000 ALTER TABLE `skill` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -487,7 +491,7 @@ CREATE TABLE `work` (
   `updated_at` datetime NOT NULL,
   `deleted_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -496,11 +500,12 @@ CREATE TABLE `work` (
 
 LOCK TABLES `work` WRITE;
 /*!40000 ALTER TABLE `work` DISABLE KEYS */;
+INSERT INTO `work` VALUES (1,'Joko Tech','Web Developer','2015-01-31','2018-01-31','Create web application using php - codeiginter 4 and database mysql','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL),(2,'Joko Hospital','Android Developer','2018-02-01',NULL,'Create android application using flutter and API','0000-00-00 00:00:00','0000-00-00 00:00:00',NULL);
 /*!40000 ALTER TABLE `work` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'db_portofolio'
+-- Dumping events for database 'db_demo'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -512,4 +517,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-16 18:17:31
+-- Dump completed on 2020-07-17 13:54:43
