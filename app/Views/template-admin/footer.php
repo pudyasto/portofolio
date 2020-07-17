@@ -8,10 +8,10 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <li class="nav-item">
-                <a href="https://pawdev.web.id/" class="nav-link" target="_blank">The Creator</a>
-            </li>
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                    <a href="https://pawdev.web.id/" class="nav-link" target="_blank">The Creator</a>
+                </li>
                 <li class="nav-item">
                     <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
                 </li>
