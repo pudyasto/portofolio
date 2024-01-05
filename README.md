@@ -39,8 +39,6 @@ Please login use username and password :
 - Username : `admin`
 - Password : `admpassword`
 
-Check [DEMO](https://myportofolio.gokoding.com/)
-
 ## Important Change with index.php
 
 `index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
